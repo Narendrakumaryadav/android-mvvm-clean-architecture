@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <attr name="severity" format="enum">
+        <enum name="success" value="0"/>
+        <enum name="information" value="1"/>
+        <enum name="warning" value="2"/>
+        <enum name="error" value="3"/>
+    </attr>
+
+    <attr name="pasteTrimType" format="enum">
+        <enum name="none" value="0"/>
+        <enum name="start" value="1"/>
+        <enum name="end" value="2"/>
+        <enum name="both" value="3"/>
+        <enum name="all" value="4"/>
+    </attr>
+
+    <attr name="text" format="string"/>
+    <attr name="htmlText" format="string"/>
+    <attr name="action" format="string"/>
+    <attr name="icon" format="reference"/>
+
+    <declare-styleable name="NotificationView">
+        <attr name="title" format="string"/>
+        <attr name="text"/>
+        <attr name="htmlText"/>
+        <attr name="action"/>
+        <attr name="isClosable" format="boolean"/>
+        <attr name="severity"/>
+        <attr name="icon"/>
+    </declare-styleable>
+
+    <declare-styleable name="CollapsableNotificationView">
+        <attr name="text"/>
+        <attr name="htmlText"/>
+        <attr name="action"/>
+        <attr name="severity"/>
+        <attr name="icon"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardViewWithGraphic">
+        <attr name="cardviewImage" format="reference"/>
+        <attr name="cardviewTitle" format="string"/>
+        <attr name="cardviewText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AirlineLogoView">
+        <attr name="airlineNameColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TravelClassLogoView">
+        <attr name="android:textColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="StatusView">
+        <attr name="severity"/>
+    </declare-styleable>
+
+    <declare-styleable name="SquareImageView">
+        <attr name="image_use" format="enum">
+            <enum name="width" value="0"/>
+            <enum name="height" value="1"/>
+            <enum name="min" value="2"/>
+            <enum name="max" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBarCompat">
+        <attr name="indeterminateTint" format="color"/>
+    </declare-styleable>
+
+    <attr name="value" format="string"/>
+    <attr name="editable" format="boolean"/>
+    <attr name="isMandatory" format="boolean"/>
+    <attr name="selection" format="integer"/>
+
+    <attr name="textFieldTheme" format="reference"/>
+
+    <declare-styleable name="TextFieldView">
+        <attr name="value"/>
+        <attr name="editable"/>
+        <attr name="android:imeOptions"/>
+        <attr name="android:inputType"/>
+        <attr name="validationCheck" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="notEmpty" value="1"/>
+            <enum name="name" value="2"/>
+            <enum name="documentNumber" value="3"/>
+            <enum name="email" value="4"/>
+            <enum name="phoneNumber" value="5"/>
+            <enum name="completePhoneNumber" value="6"/>
+            <enum name="address" value="7"/>
+            <enum name="missingBagAhlIdentifier" value="8"/>
+            <enum name="missingBagAhlTag" value="9"/>
+        </attr>
+        <attr name="isMandatory"/>
+        <attr name="android:maxLength"/>
+        <attr name="pasteTrimType"/>
+        <attr name="selection"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextInputTrimEditText">
+        <attr name="pasteTrimType"/>
+    </declare-styleable>
+
+    <attr name="callbackFieldTheme" format="reference"/>
+    <attr name="callbackOutlinedFieldTheme" format="reference"/>
+
+    <declare-styleable name="CallbackFieldView">
+        <attr name="value"/>
+        <attr name="editable"/>
+        <attr name="isMandatory"/>
+        <attr name="android:inputType"/>
+        <attr name="android:hint"/>
+    </declare-styleable>
+
+    <declare-styleable name="CallbackOutlinedFieldView">
+        <attr name="value"/>
+        <attr name="editable"/>
+        <attr name="isMandatory"/>
+        <attr name="android:inputType"/>
+        <attr name="android:hint"/>
+    </declare-styleable>
+
+    <attr name="dropdownFieldTheme" format="reference"/>
+
+    <declare-styleable name="DropdownFieldView">
+        <attr name="value"/>
+        <attr name="editable"/>
+        <attr name="isMandatory"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerTabLayout">
+        <attr name="tabCustomLayout" format="reference"/>
+        <attr name="tabCustomLayoutTextViewId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="DashView">
+        <attr name="dashWidth" format="dimension"/>
+        <attr name="dotWidth" format="dimension"/>
+        <attr name="dotColor" format="color"/>
+        <attr name="dotOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlipView">
+        <attr name="orientation" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

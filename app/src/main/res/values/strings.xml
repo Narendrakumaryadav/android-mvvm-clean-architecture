@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsApplication</string>
+    <!-- fragment screen name title -->
+    <string name="fragment_news_list_title">Latest News</string>
+    <string name="fragment_news_details_title">News Details</string>
+    <!-- errors  -->
+    <string name="check_internet">Check your internet connection</string>
+    <string name="unknown_error">An Unknown error occurred</string>
+    <string name="no_data">No Data found</string>
+</resources>

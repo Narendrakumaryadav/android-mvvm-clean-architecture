@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'de.mannodermaus.android-junit5'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.narendra.newsapplication"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName application_version
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    //Library project dependency
+    implementation project(path: ':comman')
+    implementation project(path: ':news-domain')
+    implementation project(path: ':news-data')
+    // AndroidX
+    implementation androidXDependencies.annotation
+    implementation androidXDependencies.browser
+    implementation androidXDependencies.cardview
+    implementation androidXDependencies.core
+    implementation androidXDependencies.appcompat
+    implementation androidXDependencies.viewmodel
+    implementation androidXDependencies.constraintlayout
+    implementation androidXDependencies.material
+    implementation androidXDependencies.swipelayout
+    implementation androidXDependencies.recyclerview
+    implementation androidXDependencies.fragment
+    implementation androidXDependencies.livedata
+    implementation androidXDependencies.splashscreen
+    implementation androidXDependencies.navigationFragment
+    implementation androidXDependencies.navigationUi
+    // AndroidX Lifecycle
+    implementation lifecycleDependencies.runtime
+    implementation lifecycleDependencies.viewmodel
+    implementation commonDependencies.gson
+    implementation commonDependencies.okhttp
+    // Koin
+    implementation commonDependencies.koin
+    // Images
+    implementation(commonDependencies.glide) {
+        exclude group: "com.android.support"
+    }
+    kapt commonDependencies.glide_compiler
+    // coroutines
+    implementation kotlinDependencies.coroutines_core
+    implementation kotlinDependencies.coroutines_android
+    // Network
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation commonDependencies.okhttp
+    implementation commonDependencies.okhttp_logging
+    //Testing
+    testImplementation testing.unitTestingCoroutines
+    testImplementation testing.unitTestingMockitoCore
+    testImplementation testing.unitTestingJunit
+    testImplementation testing.unitTestingCore
+    androidTestImplementation  testing.uiTestingJunit
+    androidTestImplementation  testing.uiTestingEspresso
+    // (Required) Writing and executing Unit Tests on the JUnit Platform
+    testImplementation testing.junit5
+    testRuntimeOnly testing.junitEngine
+    testRuntimeOnly testing.junitEngineVintage
+}

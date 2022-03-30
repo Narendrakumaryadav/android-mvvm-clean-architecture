@@ -1,0 +1,124 @@
+ext {
+    //Application Version
+    application_version = "1.0"
+
+    //GOOGLE COMPILE
+    android_CompileSdkVersion = 31
+    android_MinSdkVersion = 23
+
+    //KOTLIN VERSION
+    kotlin_versions = [
+            kotlin    : '1.6.10',
+            coroutines: '1.6.0'
+    ]
+
+    //GOOGLE LIB VERSION
+    android_material_version = '1.4.0'
+    androidx_versions = [
+            core            : '1.7.0',
+            browser         : '1.4.0',
+            cardview        : '1.0.0',
+            recyclerview    : '1.2.1',
+            swipelayout     : '1.1.0',
+            constraintlayout: '2.1.3',
+            room_version    : '2.4.0',
+            lifecycle       : '2.4.1',
+            appcompat       : '1.4.1',
+            annotation      : '1.3.0',
+            test_runner     : '1.4.0',
+            test_rules      : '1.4.0',
+            test_expresso   : '3.4.0',
+            test_core       : '2.1.0',
+            fragment        : '1.4.0',
+            camera          : '1.0.2',
+            camera_view     : '1.0.0-alpha20',
+            reactive_steams : '2.4.0',
+            preferences     : '1.1.1',
+            splashscreen    : '1.0.0-beta01',
+            navigation      : '2.4.0'
+    ]
+    glide_version = '4.12.0'
+    //NETWORK LIB VERSION
+    okhttp_version = '4.9.3'
+    retrofit_version = '2.9.0'
+
+    gson_version = '2.8.9'
+
+    //DI LIB VERSION
+    koin_version = "3.1.5"
+
+    //TEST LIB VERSION
+    junit4Version = '4.13.2'
+    fragment_testing = '1.4.0'
+    junitJupiterVersion = '5.8.2'
+    extJunitVersion = '1.1.3'
+    mockk_version = '1.12.2'
+    assertjVersion = '3.22.0'
+    archCoreTestingVersion = '2.1.0'
+    testRunnerVersion = '1.4.0'
+    androidxCoreVersion = '1.4.0'
+    androidxJunitVersion = '1.1.3'
+    testMockitoCore = "3.11.0"
+
+    androidXDependencies = [
+            core             : "androidx.core:core-ktx:$androidx_versions.core",
+            browser          : "androidx.browser:browser:$androidx_versions.browser",
+            cardview         : "androidx.cardview:cardview:$androidx_versions.cardview",
+            recyclerview     : "androidx.recyclerview:recyclerview:$androidx_versions.recyclerview",
+            swipelayout      : "androidx.swiperefreshlayout:swiperefreshlayout:$androidx_versions.swipelayout",
+            constraintlayout : "androidx.constraintlayout:constraintlayout:$androidx_versions.constraintlayout",
+            material         : "com.google.android.material:material:$android_material_version",
+            room_runtime     : "androidx.room:room-runtime:$androidx_versions.room_version",
+            room_compiler    : "androidx.room:room-compiler:$androidx_versions.room_version",
+            room_ktx         : "androidx.room:room-ktx:$androidx_versions.room_version",
+            appcompat        : "androidx.appcompat:appcompat:$androidx_versions.appcompat",
+            annotation       : "androidx.annotation:annotation:$androidx_versions.annotation",
+            livedata         : "androidx.lifecycle:lifecycle-livedata-ktx:$androidx_versions.lifecycle",
+            viewmodel        : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidx_versions.lifecycle",
+            fragment         : "androidx.fragment:fragment-ktx:$androidx_versions.fragment",
+            camera2          : "androidx.camera:camera-camera2:$androidx_versions.camera",
+            camera_lifecycle : "androidx.camera:camera-lifecycle:$androidx_versions.camera",
+            camera_view      : "androidx.camera:camera-view:$androidx_versions.camera_view",
+            camera_extensions: "androidx.camera:camera-extensions:$androidx_versions.camera_view",
+            reactivestreams  : "androidx.lifecycle:lifecycle-reactivestreams-ktx:$androidx_versions.reactive_steams",
+            preferences      : "androidx.preference:preference-ktx:$androidx_versions.preferences",
+            splashscreen     : "androidx.core:core-splashscreen:$androidx_versions.splashscreen",
+            navigationFragment: "androidx.navigation:navigation-fragment-ktx:$androidx_versions.navigation",
+            navigationUi     : "androidx.navigation:navigation-ui-ktx:$androidx_versions.navigation"
+    ]
+
+    // lifecycle extensions has been split up into many small parts: https://developer.android.com/jetpack/androidx/releases/lifecycle (Note to take the -ktx versions!)
+    lifecycleDependencies = [
+            runtime  : "androidx.lifecycle:lifecycle-runtime-ktx:$androidx_versions.lifecycle",
+            viewmodel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidx_versions.lifecycle"
+    ]
+
+    kotlinDependencies = [
+            coroutines_core   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_versions.coroutines",
+            coroutines_android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_versions.coroutines",
+            coroutines_rx2    : "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$kotlin_versions.coroutines"
+    ]
+
+    commonDependencies = [
+            retrofit       : "com.squareup.retrofit2:retrofit:$retrofit_version",
+            converter_gson : "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            koin           : "io.insert-koin:koin-android:$koin_version",
+            glide          : "com.github.bumptech.glide:glide:$glide_version",
+            glide_compiler : "com.github.bumptech.glide:compiler:$glide_version",
+            gson           : "com.google.code.gson:gson:$gson_version",
+            okhttp         : "com.squareup.okhttp3:okhttp:$okhttp_version",
+            okhttp_logging : "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    ]
+    testing = [
+            unitTestingCore       : "androidx.arch.core:core-testing:$androidx_versions.test_core",
+            unitTestingCoroutines : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlin_versions.coroutines",
+            unitTestingMockitoCore: "org.mockito:mockito-core:$testMockitoCore",
+            unitTestingJunit      : "junit:junit:$junit4Version",
+            uiTestingJunit        : "androidx.test.ext:junit:$androidxJunitVersion",
+            uiTestingEspresso     : "androidx.test.espresso:espresso-core:$androidx_versions.test_expresso",
+            junit5            : "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion",
+            junitParams       : "org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion",
+            junitEngine       : "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion",
+            junitEngineVintage: "org.junit.vintage:junit-vintage-engine:$junitJupiterVersion",
+    ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- news image view height -->
+    <dimen name="news_list_image_height">220dp</dimen>
+    <dimen name="news_detail_image_height">250dp</dimen>
+</resources>
