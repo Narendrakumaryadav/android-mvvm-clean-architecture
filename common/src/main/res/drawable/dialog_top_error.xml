@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/background_shape"
+        android:drawable="@drawable/dialog_shape_circle_error" />
+    <item
+        android:id="@+id/icon"
+        android:bottom="@dimen/spacingS"
+        android:drawable="@drawable/dialog_error"
+        android:gravity="center"
+        android:left="@dimen/spacingS"
+        android:right="@dimen/spacingS"
+        android:top="@dimen/spacingS" />
+</layer-list>

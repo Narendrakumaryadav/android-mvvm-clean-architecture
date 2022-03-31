@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_waiting_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_waiting_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacingXS"
+        android:paddingTop="@dimen/spacingXL"
+        android:paddingRight="@dimen/spacingXS"
+        android:paddingBottom="@dimen/spacingXL">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- rounded progress bar -->
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                style="@style/Widget.MaterialComponents.CircularProgressIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:indicatorSize="@dimen/dialog_waiting_progress_size"
+                app:indicatorColor="@color/white"/>
+
+        </FrameLayout>
+
+        <!-- loading text -->
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/spacingXS"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            tools:text="loading text" />
+    </LinearLayout>
+</FrameLayout>

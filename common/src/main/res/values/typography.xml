@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Set of dummy styles to be able to configure views for both platforms
+    -->
+
+    <!-- Prefix for all font variants -->
+    <style name="Font" />
+
+</resources>
