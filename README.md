@@ -30,6 +30,5 @@ This is multi module application, This application have 4 modules
 
 # Screenshot
 
-![Screenshot_1648711266](https://user-images.githubusercontent.com/1405127/161000084-a9f72162-5561-4597-8118-e00d7e63aff6.png)
-![Screenshot_1648711270](https://user-images.githubusercontent.com/1405127/161000114-bf377da2-a09a-4b60-b6d0-d726565e8dae.png)
+![Screenshot_1648711266](https://user-images.githubusercontent.com/1405127/161000084-a9f72162-5561-4597-8118-e00d7e63aff6.png)   ![Screenshot_1648711270](https://user-images.githubusercontent.com/1405127/161000114-bf377da2-a09a-4b60-b6d0-d726565e8dae.png)
 
