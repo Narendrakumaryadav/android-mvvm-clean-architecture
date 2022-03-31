@@ -4,6 +4,9 @@ import com.narendra.news_domain.model.dto.NewsListDto
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+/**
+ * Retrofit API Service
+ */
 interface NewsAPIService {
 
     @GET("news")

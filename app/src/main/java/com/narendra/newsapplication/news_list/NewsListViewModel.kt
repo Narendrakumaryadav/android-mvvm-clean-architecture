@@ -18,7 +18,10 @@ class NewsListViewModel(private val newsUseCase: NewsUseCase) : BaseViewModel() 
     init {
         getNews(newsCategory)
     }
-
+    /**
+     * Method to fetch the news data.
+     * @param newsCategory category of news
+     */
     fun getNews(newsCategory: String) {
         viewModelScope.launch {
             newsUseCase.getNews(newsCategory).collectLatest {

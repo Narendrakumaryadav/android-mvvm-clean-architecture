@@ -9,6 +9,9 @@ import androidx.navigation.fragment.navArgs
 import com.narendra.newsapplication.R
 import com.narendra.newsapplication.databinding.FragmentNewsDetailsBinding
 
+/**
+ * This fragment show selected news details
+ */
 class NewsDetailsFragment : Fragment() {
 
     private var _binding: FragmentNewsDetailsBinding? = null

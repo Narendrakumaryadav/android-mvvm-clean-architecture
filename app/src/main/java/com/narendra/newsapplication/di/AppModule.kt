@@ -18,6 +18,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.dsl.viewModel
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * all required dependency
+ */
 val appModule = module {
     single { provideOkHttpClient() }
     single { provideRetrofit(get()) }

@@ -8,7 +8,10 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
-
+/**
+ * Implementation of NewsRepository
+ * @param newsAPI the object of news api service
+ */
 class NewsRepositoryImpl(private val newsAPI : NewsAPIService): NewsRepository {
     override fun getNews(newsCategory: String): Flow<Resource<List<NewsDataDto>?>> {
         return flow {

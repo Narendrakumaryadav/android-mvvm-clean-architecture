@@ -6,17 +6,26 @@ import androidx.recyclerview.widget.RecyclerView
 import com.narendra.news_domain.model.News
 import com.narendra.newsapplication.databinding.ViewHolderNewsListBinding
 
+/**
+ * RecyclerView Adapter to display news.
+ */
 class NewsListAdapter : RecyclerView.Adapter<NewsListAdapter.MyViewHolder>() {
 
     private var listener: ((News) -> Unit)? = null
 
     var list = mutableListOf<News>()
-
+    /**
+     * Method to update the data set of adapter.
+     */
     fun setContentList(list: MutableList<News>) {
         this.list = list
         notifyDataSetChanged()
     }
-
+    /**
+     * RecyclerView ViewHolder to display a News item.
+     *
+     * @property viewHolder the binding class item layout.
+     */
     class MyViewHolder(val viewHolder: ViewHolderNewsListBinding) : RecyclerView.ViewHolder(viewHolder.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {

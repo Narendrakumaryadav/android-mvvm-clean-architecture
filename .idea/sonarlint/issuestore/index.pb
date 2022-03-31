@@ -9,27 +9,13 @@ X
 (gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 F
 news-domain/.gitignore,9/9/9977b23da57e8d9f6adb1fbf246b9b8400acd095
-P
- app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 r
 Bnews-domain/src/test/java/com/narendra/news_domain/NewsTestData.kt,c/2/c201927ae34c674e8618bd953d96bf324233ead3
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 {
-Kapp/src/main/java/com/narendra/newsapplication/news_list/NewsListAdapter.kt,1/5/15faa29609df5f0c6ee4c32e548492a8edac525e
-‚
-Rapp/src/main/java/com/narendra/newsapplication/news_details/NewsDetailsFragment.kt,7/1/7163ddfeaa04bc62e82594b66bd4fa484a92e79a
-u
-Eapp/src/main/java/com/narendra/newsapplication/news_list/NewsState.kt,b/a/ba20dae5e68e7bb30e31f70f90f8021d7b67adfc
-n
->app/src/main/java/com/narendra/newsapplication/MainActivity.kt,1/e/1e5675ffdb80e19469889ce1a58ad8c3b2c1581b
-q
-Aapp/src/main/java/com/narendra/newsapplication/NewsApplication.kt,9/a/9a860416b5bf94544e32e7e582b6fec5bbde1add
-{
 Knews-domain/src/main/java/com/narendra/news_domain/model/dto/NewsDataDto.kt,6/0/607e75dabcfbf56c1541f6859a1e417089113b1a
-{
-Knews-domain/src/main/java/com/narendra/news_domain/model/dto/NewsListDto.kt,a/2/a2c6d2466c6c93c07380a3d73d1e48cdb4243f85
 {
 Knews-domain/src/main/java/com/narendra/news_domain/model/BindingAdapters.kt,b/0/b0de4f43cff4fc2ab7eb7f40870c10ec8bb57e5e
 p
