@@ -1,7 +1,7 @@
 package com.narendra.news_data.data.repository
 
 import com.narendra.news_data.data.remote.NewsAPIService
-import com.narendra.comman.model.Resource
+import com.narendra.common.model.Resource
 import com.narendra.news_domain.model.dto.NewsDataDto
 import com.narendra.news_domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
@@ -10,7 +10,7 @@ import retrofit2.HttpException
 import java.io.IOException
 
 class NewsRepositoryImpl(private val newsAPI : NewsAPIService): NewsRepository {
-    override suspend fun getNews(newsCategory: String): Flow<Resource<List<NewsDataDto>?>> {
+    override fun getNews(newsCategory: String): Flow<Resource<List<NewsDataDto>?>> {
         return flow {
             try {
                 emit(Resource.Loading())

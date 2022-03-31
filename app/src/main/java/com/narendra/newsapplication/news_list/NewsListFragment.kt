@@ -4,12 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.coroutineScope
 import androidx.navigation.fragment.findNavController
-import com.narendra.comman.base.BaseFragment
-import com.narendra.comman.dialogs.ErrorDialog
-import com.narendra.comman.dialogs.WaitingDialog
+import com.narendra.common.base.BaseFragment
 import com.narendra.news_domain.model.dto.toNews
 import com.narendra.news_domain.model.dto.toNewsDetails
 import com.narendra.newsapplication.R

@@ -1,11 +1,12 @@
 package com.narendra.newsapplication.news_list
 
 import androidx.lifecycle.viewModelScope
-import com.narendra.comman.base.BaseViewModel
-import com.narendra.comman.model.Resource
+import com.narendra.common.base.BaseViewModel
+import com.narendra.common.model.Resource
 import com.narendra.news_domain.use_case.NewsUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class NewsListViewModel(private val newsUseCase: NewsUseCase) : BaseViewModel() {
@@ -20,7 +21,7 @@ class NewsListViewModel(private val newsUseCase: NewsUseCase) : BaseViewModel() 
 
     fun getNews(newsCategory: String) {
         viewModelScope.launch {
-            newsUseCase.getNews(newsCategory).collect(){
+            newsUseCase.getNews(newsCategory).collectLatest {
                 when (it) {
                     is Resource.Loading<*> -> {
                         _newsList.value = NewsState(isLoading = true)
@@ -35,5 +36,4 @@ class NewsListViewModel(private val newsUseCase: NewsUseCase) : BaseViewModel() 
             }
         }
     }
-
 }

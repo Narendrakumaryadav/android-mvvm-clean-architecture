@@ -1,7 +1,7 @@
 package com.narendra.news_data.repository
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.narendra.comman.model.Resource
+import com.narendra.common.model.Resource
 import com.narendra.news_data.data.remote.NewsAPIService
 import com.narendra.news_data.data.repository.NewsRepositoryImpl
 import com.narendra.news_domain.repository.NewsRepository

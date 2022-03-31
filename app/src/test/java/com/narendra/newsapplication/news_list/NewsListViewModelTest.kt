@@ -1,6 +1,6 @@
 package com.narendra.newsapplication.news_list
 
-import com.narendra.comman.model.Resource
+import com.narendra.common.model.Resource
 import com.narendra.news_domain.use_case.NewsUseCase
 import com.narendra.newsapplication.BaseViewModelTest
 import com.narendra.newsapplication.getDummyNewsData

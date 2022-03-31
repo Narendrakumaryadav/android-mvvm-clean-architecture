@@ -1,7 +1,7 @@
 package com.narendra.news_domain
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.narendra.comman.model.Resource
+import com.narendra.common.model.Resource
 import com.narendra.news_domain.model.dto.NewsDataDto
 import com.narendra.news_domain.repository.NewsRepository
 import com.narendra.news_domain.use_case.NewsUseCaseImpl

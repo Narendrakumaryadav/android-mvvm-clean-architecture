@@ -1,9 +1,9 @@
 package com.narendra.newsapplication.di
 
 import android.content.Context
+import com.narendra.common.helper.NetworkHelper
+import com.narendra.common.utils.constants.BASE_URL
 import com.narendra.news_data.data.remote.NewsAPIService
-import com.narendra.comman.helper.NetworkHelper
-import com.narendra.comman.utils.constants.BASE_URL
 import com.narendra.news_data.data.repository.NewsRepositoryImpl
 import com.narendra.news_domain.repository.NewsRepository
 import com.narendra.news_domain.use_case.NewsUseCase

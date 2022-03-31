@@ -44,7 +44,7 @@ android {
 
 dependencies {
     //Library project dependency
-    implementation project(path: ':comman')
+    implementation project(path: ':common')
     implementation project(path: ':news-domain')
     implementation project(path: ':news-data')
     // AndroidX

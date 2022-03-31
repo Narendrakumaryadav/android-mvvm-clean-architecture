@@ -27,6 +27,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -34,7 +40,6 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
-    implementation "com.squareup.retrofit2:retrofit:2.9.0"
     //Testing
     testImplementation testing.unitTestingCoroutines
     testImplementation testing.unitTestingMockitoCore
@@ -43,11 +48,4 @@ dependencies {
     androidTestImplementation  testing.uiTestingJunit
     androidTestImplementation  testing.uiTestingEspresso
 
-    // (Required) Writing and executing Unit Tests on the JUnit Platform
-    testImplementation testing.junit5
-    testRuntimeOnly testing.junitEngine
-
-    //Library project dependency
-    implementation project(path: ':news-domain')
-    implementation project(path: ':common')
 }
