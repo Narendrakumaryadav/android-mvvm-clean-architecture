@@ -4,18 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.narendra.common.base.BaseFragment
 import com.narendra.newsapplication.R
 import com.narendra.newsapplication.databinding.FragmentNewsDetailsBinding
 
 /**
  * This fragment show selected news details
  */
-class NewsDetailsFragment : Fragment() {
+internal class NewsDetailsFragment : BaseFragment() {
 
     private var _binding: FragmentNewsDetailsBinding? = null
-    val binding: FragmentNewsDetailsBinding
+    private val binding: FragmentNewsDetailsBinding
         get() = _binding!!
 
     private val args: NewsDetailsFragmentArgs by navArgs()

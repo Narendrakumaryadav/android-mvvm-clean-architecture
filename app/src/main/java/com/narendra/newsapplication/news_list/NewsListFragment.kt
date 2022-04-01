@@ -16,7 +16,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 /**
  * This fragment has list of news
  */
-class NewsListFragment : BaseFragment() {
+internal class NewsListFragment : BaseFragment() {
 
     private var _binding: FragmentNewsListBinding? = null
     // This property is only valid between onCreateView and onDestroyView.

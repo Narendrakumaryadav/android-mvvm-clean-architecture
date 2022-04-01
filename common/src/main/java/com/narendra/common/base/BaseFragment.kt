@@ -1,14 +1,14 @@
 package com.narendra.common.base
 
 import androidx.fragment.app.Fragment
+import com.narendra.common.R
 import com.narendra.common.dialogs.ErrorDialog
 import com.narendra.common.dialogs.WaitingDialog
-import com.narendra.common.R
 
 /**
  * Base class for all Fragments
  */
-open class BaseFragment : Fragment() {
+abstract class BaseFragment : Fragment() {
 
     private lateinit var loader: WaitingDialog
 

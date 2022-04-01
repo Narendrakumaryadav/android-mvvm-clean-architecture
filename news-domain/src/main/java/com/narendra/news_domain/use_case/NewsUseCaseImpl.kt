@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
  * Implementation of News UseCase
  * @param newsRepository the news repository object
  */
-class NewsUseCaseImpl(private val newsRepository : NewsRepository) : NewsUseCase {
+internal class NewsUseCaseImpl(private val newsRepository : NewsRepository) : NewsUseCase {
 
     override fun getNews(newsCategory: String): Flow<Resource<List<NewsDataDto>?>> {
         return newsRepository.getNews(newsCategory)

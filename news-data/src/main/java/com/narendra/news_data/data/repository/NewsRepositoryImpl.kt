@@ -12,7 +12,7 @@ import java.io.IOException
  * Implementation of NewsRepository
  * @param newsAPI the object of news api service
  */
-class NewsRepositoryImpl(private val newsAPI : NewsAPIService): NewsRepository {
+internal class NewsRepositoryImpl(private val newsAPI : NewsAPIService): NewsRepository {
     override fun getNews(newsCategory: String): Flow<Resource<List<NewsDataDto>?>> {
         return flow {
             try {

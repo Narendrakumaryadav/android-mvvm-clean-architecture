@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
@@ -12,26 +12,22 @@
         android:layout_gravity="center"
         android:background="@drawable/dialog_waiting_background"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/spacingXS"
-        android:paddingTop="@dimen/spacingXL"
-        android:paddingRight="@dimen/spacingXS"
-        android:paddingBottom="@dimen/spacingXL">
+        android:paddingHorizontal="@dimen/spacingXS"
+        android:paddingVertical="@dimen/spacingXL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- rounded progress bar -->
-            <com.google.android.material.progressindicator.CircularProgressIndicator
-                style="@style/Widget.MaterialComponents.CircularProgressIndicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:indeterminate="true"
-                app:indicatorSize="@dimen/dialog_waiting_progress_size"
-                app:indicatorColor="@color/white"/>
-
-        </FrameLayout>
+        <!-- rounded progress bar -->
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            style="@style/Widget.MaterialComponents.CircularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            app:indicatorColor="@color/white"
+            app:indicatorSize="@dimen/dialog_waiting_progress_size" />
 
         <!-- loading text -->
         <TextView
@@ -40,8 +36,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingTop="@dimen/spacingXS"
-            android:textSize="20sp"
             android:textColor="@color/white"
+            android:textSize="20sp"
             tools:text="loading text" />
     </LinearLayout>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

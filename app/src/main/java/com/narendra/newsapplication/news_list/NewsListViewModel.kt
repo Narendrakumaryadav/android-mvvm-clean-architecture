@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-class NewsListViewModel(private val newsUseCase: NewsUseCase) : BaseViewModel() {
+internal class NewsListViewModel(private val newsUseCase: NewsUseCase) : BaseViewModel() {
 
     private val newsCategory: String = "all"
     private val _newsList = MutableStateFlow<NewsState>(NewsState())

@@ -15,13 +15,7 @@ Bnews-domain/src/test/java/com/narendra/news_domain/NewsTestData.kt,c/2/c201927
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 {
-Knews-domain/src/main/java/com/narendra/news_domain/model/dto/NewsDataDto.kt,6/0/607e75dabcfbf56c1541f6859a1e417089113b1a
-{
 Knews-domain/src/main/java/com/narendra/news_domain/model/BindingAdapters.kt,b/0/b0de4f43cff4fc2ab7eb7f40870c10ec8bb57e5e
-p
-@news-domain/src/main/java/com/narendra/news_domain/model/News.kt,7/1/71b307ba6da0cdb2ed5403290006c3cf656b9e4f
-w
-Gnews-domain/src/main/java/com/narendra/news_domain/model/NewsDetails.kt,4/8/48b1820160a397ee0d212439a40f5b2a7616f3c6
 s
 Capp/src/test/java/com/narendra/newsapplication/BaseViewModelTest.kt,5/a/5aaaebec46b008ff9b06d28161cdb0e4f6110f98
 s

@@ -1,8 +1,8 @@
 package com.narendra.newsapplication
 
 import android.app.Application
-import com.narendra.newsapplication.di.appModule
-import com.narendra.newsapplication.di.useCaseModule
+import com.narendra.news_data.data.di.dataModule
+import com.narendra.news_domain.di.useCaseModule
 import com.narendra.newsapplication.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
@@ -18,7 +18,7 @@ class NewsApplication : Application() {
     private fun initKoin() {
         startKoin {
             androidContext(this@NewsApplication)
-            modules(listOfNotNull(appModule, useCaseModule, viewModelModule))
+            modules(listOfNotNull(viewModelModule, useCaseModule, dataModule))
         }
     }
 }

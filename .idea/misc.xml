@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/fragment_news_list.xml" value="0.171875" />
         <entry key="app/src/main/res/layout/view_holder_news_list.xml" value="0.171875" />
         <entry key="comman/src/main/res/layout/dialog_error.xml" value="0.31567028985507245" />
+        <entry key="common/src/main/res/layout/dialog_waiting.xml" value="0.171875" />
         <entry key="news-domain/src/main/res/drawable/dialog_error.xml" value="0.1805" />
         <entry key="news-domain/src/main/res/drawable/ic_image_place_holder.xml" value="0.1805" />
         <entry key="news-domain/src/main/res/layout/dialog_error.xml" value="0.171875" />

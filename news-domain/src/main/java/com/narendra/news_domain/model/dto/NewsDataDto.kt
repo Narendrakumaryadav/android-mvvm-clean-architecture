@@ -1,19 +1,28 @@
 package com.narendra.news_domain.model.dto
 
 import androidx.annotation.Keep
+import com.google.gson.annotations.SerializedName
 import com.narendra.news_domain.model.News
 import com.narendra.news_domain.model.NewsDetails
 
 @Keep
 data class NewsDataDto(
-    val author: String?,
-    val content: String?,
-    val date: String?,
-    val imageUrl: String?,
-    val readMoreUrl: String?,
-    val time: String?,
-    val title: String,
-    val url: String?
+    @SerializedName("author")
+    val author: String = "",
+    @SerializedName("content")
+    val content: String = "",
+    @SerializedName("date")
+    val date: String = "",
+    @SerializedName("imageUrl")
+    val imageUrl: String = "",
+    @SerializedName("readMoreUrl")
+    val readMoreUrl: String? = null,
+    @SerializedName("time")
+    val time: String = "",
+    @SerializedName("title")
+    val title: String = "",
+    @SerializedName("url")
+    val url: String = ""
 )
 
 fun NewsDataDto.toNews(): News {

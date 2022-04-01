@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -37,15 +38,12 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    //Testing
-    testImplementation testing.unitTestingCoroutines
-    testImplementation testing.unitTestingMockitoCore
-    testImplementation testing.unitTestingJunit
-    testImplementation testing.unitTestingCore
-    androidTestImplementation  testing.uiTestingJunit
-    androidTestImplementation  testing.uiTestingEspresso
+    implementation androidXDependencies.core
+    implementation androidXDependencies.appcompat
+    implementation androidXDependencies.material
+    // Images
+    implementation(commonDependencies.glide) {
+        exclude group: "com.android.support"
+    }
 
 }

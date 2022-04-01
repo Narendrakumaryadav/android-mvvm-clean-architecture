@@ -9,7 +9,7 @@ import com.narendra.newsapplication.databinding.ViewHolderNewsListBinding
 /**
  * RecyclerView Adapter to display news.
  */
-class NewsListAdapter : RecyclerView.Adapter<NewsListAdapter.MyViewHolder>() {
+internal class NewsListAdapter : RecyclerView.Adapter<NewsListAdapter.MyViewHolder>() {
 
     private var listener: ((News) -> Unit)? = null
 

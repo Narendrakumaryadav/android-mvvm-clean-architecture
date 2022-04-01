@@ -1,11 +1,14 @@
 package com.narendra.news_domain.model.dto
 
 import androidx.annotation.Keep
-import com.narendra.news_domain.model.dto.NewsDataDto
+import com.google.gson.annotations.SerializedName
 
 @Keep
 data class NewsListDto(
-    val category: String,
-    val `data`: List<NewsDataDto>?,
-    val success: Boolean
+    @SerializedName("category")
+    val category: String = "",
+    @SerializedName("data")
+    val `data`: List<NewsDataDto> = listOf(),
+    @SerializedName("success")
+    val success: Boolean = false
 )
