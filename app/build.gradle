@@ -9,12 +9,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.narendra.newsapplication"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName application_version
 
@@ -39,6 +39,10 @@ android {
     }
     buildFeatures {
         dataBinding true
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.2.0'
     }
 }
 
@@ -80,4 +84,10 @@ dependencies {
     // (Required) Writing and executing Unit Tests on the JUnit Platform
     testRuntimeOnly testing.junitEngine
     testRuntimeOnly testing.junitEngineVintage
+    //compose
+    implementation 'androidx.activity:activity-compose:1.3.1'
+    implementation "androidx.compose.ui:ui:$compose_ui_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
+    implementation 'androidx.compose.material:material:1.2.0'
+    implementation("io.coil-kt:coil-compose:2.0.0-rc01")
 }
