@@ -11,14 +11,19 @@ on:
 # A workflow run is madeup of one or more jobs that can run sequentially or parallel
 jobs:
 
-  test:
+  build:
     runs-on: ubuntu-latest
     permissions:
       packages: read
       contents: read
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: Run a one-list script
         run: echo Hello CI CD
+
+      - name: Run a multi-line script
+        run: |
+            echo add other action to build
+            echo test, and deploy your project
