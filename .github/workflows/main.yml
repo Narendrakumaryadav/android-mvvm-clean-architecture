@@ -1,0 +1,24 @@
+# This is basic workflow to help you get started with action
+name: CI 
+# Control when action will run
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+# Allow you to run this workflow manually from action tab
+  workflow_dispatch:
+# A workflow run is madeup of one or more jobs that can run sequentially or parallel
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: read
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Run a one-list script
+        run: echo Hello CI CD
